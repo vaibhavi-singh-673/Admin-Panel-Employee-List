@@ -1,0 +1,265 @@
+body {
+  margin: 0;
+  background-color: aliceblue;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+/* Style for the navigation bar */
+nav {
+  display: flex;
+  justify-content: space-between; /* Space between items */
+  align-items: center; /* Center items vertically */
+  padding: 10px; /* Add padding around the nav */
+  background-color: #146bc8; /* Background color for the nav */
+}
+
+/* Style for the navigation list */
+nav ul {
+  display: flex;
+  list-style-type: none; /* Remove bullet points */
+  margin: 0; /* Remove default margin */
+  padding: 0; /* Remove default padding */
+  flex-grow: 1; /* Ensure the ul takes up the remaining space */
+}
+
+/* Style for the navigation list items */
+nav ul li {
+  margin-right: 20px; /* Space between items */
+}
+
+/* Style for the navigation links */
+nav ul li a {
+  color: white; /* Text color */
+  text-decoration: none; /* Remove underline */
+  padding: 5px 10px; /* Add padding around the text */
+}
+
+/* Style for the logout button */
+nav .logout-button {
+  background-color: #d32f2f; /* Red color */
+  color: white; /* Text color */
+  border: none; /* Remove border */
+  padding: 5px 10px; /* Add padding around the text */
+  cursor: pointer; /* Change cursor on hover */
+  margin-left: auto; /* Push the button to the right */
+}
+
+/* Hover effect for links and button */
+nav ul li a:hover,
+nav .logout-button:hover {
+  background-color: #555; /* Darker background color on hover */
+}
+
+
+/* login.css */
+
+.login-container {
+  width: 100%;
+  max-width: 400px;
+  margin: 50px auto;
+  padding: 40px;
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.login-container h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #333333;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  display: block;
+  font-weight: bold;
+  color: #333333;
+}
+
+.form-group input[type="text"],
+.form-group input[type="password"] {
+  width: 100%;
+  padding: 5px;
+  border: 1px solid #cccccc;
+  border-radius: 5px;
+}
+
+.form-submit-button {
+  width: 102%;
+  padding: 8px;
+  background-color: #0e4d90;
+  color: #ffffff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease; /* Add transition effect */
+}
+
+.form-submit-button:hover {
+  background-color: #0056b3;
+}
+
+/* employeeList.css */
+
+/* Container styling */
+.employee-list-container {
+  font: 1em sans-serif;
+  padding-top: 30px;
+  width: 90%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+/* Heading styling */
+.employee-list-container h2 {
+  margin-bottom: 20px;
+}
+
+/* Button container styling */
+.button-container {
+  display: flex; /* Use flexbox */
+  align-items: center; /* Align items vertically */
+  justify-content: space-between; /* Space items evenly */
+  margin-bottom: 20px;
+}
+
+/* Input styling */
+.button-container input[type="text"] {
+  width: 200px;
+  padding: 4px;
+}
+
+/* Table styling */
+.employee-list-container table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+}
+
+/* Table header styling */
+.employee-list-container th,
+.employee-list-container td {
+  padding: 10px;
+  border: 1px solid #441a1a;
+}
+
+.employee-list-container th {
+  background-color: hsl(205, 76%, 54%);
+}
+
+/* Image styling */
+.employee-list-container img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+
+/* Button styling */
+.employee-list-container button {
+  padding: 8px 12px;
+  margin-right: 5px;
+  background-color: hsl(205, 90%, 43%);
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.employee-list-container button:hover {
+  background-color:  hsl(205, 90%, 43%)
+}
+
+
+.create-employee-container {
+  font: 1em sans-serif;
+  width: 50%;
+  margin: 0 auto;
+}
+
+.create-employee-container h2 {
+  text-align: center;
+  padding-top: 25px;
+  margin-bottom: 20px;
+}
+
+.create-employee-container form {
+  background-color: #f9f9f9;
+  padding: 20px;
+  border-radius: 5px;
+}
+
+.create-employee-container form div {
+  margin-bottom: 15px;
+}
+
+.create-employee-container form label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.create-employee-container form input[type="text"],
+.create-employee-container form input[type="email"] {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.create-employee-container form button[type="submit"] {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.create-employee-container form button[type="submit"]:hover {
+  background-color: #0056b3;
+}
+
+/* CSS for the close button in the modal */
+.modal .close {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  font-size: 1.5rem;
+  color: #000;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  outline: none;
+}
+
+.modal .close:hover,
+.modal .close:focus {
+  color: #555;
+  text-decoration: none;
+  opacity: 0.75;
+}
+
+/* CSS for the search input */
+.search-input {
+  width: 100%;
+  padding: 4px;
+  font-size: 1rem;
+  /* border: 1px solid #ccc; */
+  border-radius: 4px;
+}
+
+.search-input:focus {
+  border-color: #007bff;
+  outline: none;
+}
